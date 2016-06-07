@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Dojo Survey (Snyder)</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='basiccss.css') }}" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div id="wrapper" class="boxOne">
+
+    <form action='/users' id="topform" method='post'>
+      <p>Your Name:<input type='text' name='name'></p>
+      <p>Dojo Location:
+        <select name='dojolocal' class="selectpicker form-control">
+          <option value="Seattle">Seattle</option>
+          <option value="San Francisco">San Francisco</option>
+        </select></p>
+        <p>Favorite Language:
+          <select name='favlang' class="selectpicker form-control">
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+          </select></p>
+          <p>Comments? (optional)</p>
+          <textarea rows="4" cols="50" name="commentbox" form="topform">
+</textarea>
+          <input type='submit' value='Submit'>
+        </form>
+      </div>
+    </body>
+    </html>
